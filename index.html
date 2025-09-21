@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harnoor Gill - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-left">
+        <div class="small-circle"></div>
+        <div class="header-text">
+          <h3>Harnoor Gill</h3>
+          <p>Application Development Student</p>
+        </div>
+      </div>
+      <div class="header-right">
+        <span class="nav-item">Courses</span>
+        <span class="nav-item">Academics</span>
+        <span class="nav-item">Projects</span>
+        <span class="nav-item">Skills</span>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-container">
+      <div class="left-side">
+        <div class="profile-circle">
+          <img
+            src="images/photo.jpg"
+            alt="Harnoor Gill Profile"
+            onerror="this.style.display='none'"
+          />
+        </div>
+      </div>
+
+      <div class="right-side">
+        <h1>Harnoor Gill</h1>
+        <h2>A Bit About Me</h2>
+        <p>
+          I am an ambitious Application Development and Delivery student with a
+          passion for technology and software development. Currently pursuing my
+          degree in Information Technology, I am actively seeking opportunities
+          to apply my technical skills in a professional environment. I
+          specialize in web development, database management, and software
+          solutions, with hands-on experience in multiple programming languages
+          and development tools.
+        </p>
+
+        <div class="circles-container">
+          <div class="circle green" onclick="showContent('courses')">
+            Courses
+          </div>
+          <div class="circle orange" onclick="showContent('academics')">
+            Academics
+          </div>
+          <div class="circle blue" onclick="showContent('projects')">
+            Projects
+          </div>
+          <div class="circle gray" onclick="showContent('skills')">Skills</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content Display Area -->
+    <div class="content-area" id="contentArea" style="display: none">
+      <div class="content-box" id="contentBox"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-left">
+        <strong>Email</strong><br />
+        harnoorgill200507@gmail.com
+      </div>
+      <div class="footer-center">
+        <strong>Phone</strong><br />
+        204-207-0990
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
